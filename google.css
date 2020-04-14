@@ -1,10 +1,17 @@
 
+/* aligne les paragraphe au centre*/
 p{
 	text-align : center;
 }
 
+/*init le contenu en flex*/
+header {
+    display: flex;
+    flex-direction: row;
+  }
 
 
+/*//////////////////////////////////////////////////////////// menu haut /////////////////////////////////////////////////////////////////////*/
 
 
 .connexion_image {
@@ -17,7 +24,6 @@ p{
 }
 
 
-
 .menu_haut_image {
 	width: 50px;
 	margin-right: 0;
@@ -27,161 +33,203 @@ p{
 	top : 10px
 }
 
+/*decoration du texte du menu haut */
 .texte_menu_haut {
 	text-decoration: none;
 }
 
+/* texte "gmail"*/
 .gmail {
 	position:absolute;
 	right: 235px;
 	top: 20px;
 }
 
+/*texte "images" */
 .image {
 	position:absolute;
 	right: 175px;
 	top: 20px;
 }
 
+/* quand on passe la souris sur du texte il est surligné*/
 .texte_menu_haut:hover {
   text-decoration: underline;
 }
 
 
 
-.text_centre{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-
-
 /*/////////////////////////////////////////////////image google ////////////////////////////////////////////////////////////////////////////*/
 
-.google_image {
-	width: 26%;
-	/*display: block;
+/* contient les images du centre et la recherche*/
+#contaigner_google {
+	
+	display: flex;
+	
+	/*aligné au centre */
 	margin-left: auto;
 	margin-right: auto;
-	padding: 6% 0;*/
-	position: absolute;
-	top: 10%;
-	left: 37%;
+	margin-top:100px;
 	
+	flex-wrap: wrap; /* saut de ligne */
+	
+	/*taille de l'image*/
+	height: 380px;
+	width: 600px;
+	
+	/*border: 2px solid #f3f;*/
+	
+	/*alignement dans le cadre*/
+	justify-content:center;
+	align-items:flex-start;
+}
+
+/* grosse image google au centre */
+.google_image {
+	width: 500px;
+}
+
+/* petit logo partage*/
+.google_image_partage {
+	width: 25px;
+	height: 25px;
 	
 }
 
-.google_image_partage {
-	width: 25px;
+/*placement du logo partage*/
+#contaigner_google .google_image_partage {
 	position: absolute;
-	top: 30%;
-	left: 65%;
+	margin-top: 180px;
+	margin-left: 250px;
 }
 
 /*////////////////////////////////////////////////recherche google/////////////////////////////////////////////////////////////*/
 
 
-
-.texte_recherche {
-	width: 32%;
-	height: 40px;
+/* contient la recherche*/
+#contaigner_recherche_google {
+	
+	/*positionement*/
 	position: absolute;
-	top: 35%;
-	left: 34%;
+	top: 310px;
+	margin-left: 250px;
+	
+	
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	
+	flex-wrap: wrap;/* saut de ligne */
+	
+	/*tailles*/
+	height: 100px;
+	width: 600px;
+	
+	/*border: 2px solid #53f;*/
+}
+
+
+/*outils de recherhce*/
+ .texte_recherche {
+	 
+	/*tailles*/
+	width: 490px;
+	height: 40px;
+	
+	/*placement*/
+	margin-left: 50px;
+	margin-top: 0px;
+	flex-wrap: wrap;
+	
+	/*bord arrondis*/
 	border-radius: 40px;
 }
 
+
 .bp_recherche {
+	
+	/*tailles*/
 	width: 150px;
 	height: 40px;
+	
+	/*placement*/
 	position: absolute;
-	top: 43%;
-	left: 42%;
+	top: 60px;
+	left: 120px;
+	
+	
+	flex-wrap: nowrap;
 	border: 0px solid #f3f3f3;
-  background-color: #f3f3f3;
-  border-radius: 4px;
+	background-color: #f3f3f3;
+	border-radius: 4px;
 }
 
 .bp_chance {
+	
+	/*tailles*/
 	width: 150px;
 	height: 40px;
+	
+	/*placement*/
 	position: absolute;
-	top: 43%;
-	left: 51%;
+	top: 60px;
+	left: 200px;
+	margin-left: 100px;
+
 	border: 0px solid #f3f3f3;
-  background-color: #f3f3f3;
-  border-radius: 4px;
+	background-color: #f3f3f3;
+	border-radius: 4px;
 }
 
 /*/////////////////////////////////////////////////////////geste barriere/////////////////////////////////////////////////*/
 
+
+/* contient l'info sur le corona et le site en anglais*/
+#contaigner_corona {
+	
+	display: flex;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:10px;
+	
+	flex-wrap: wrap;
+	
+	height: 120px;
+	width: 400px;
+	
+	justify-content:center;
+	align-items:flex-start;
+	
+	/*border: 2px solid #83f;*/
+}
+
+/*placement image geste barriere*/
 .geste_barriere_image {
-	width: 40px;
-	position: absolute;
-	top: 52%;
-	left: 40%;
+	
+	width: 50px;
+	height:50px;
+	
+	margin-left: 0px;
+	margin-top: 0px;
 }
 
-
+/*placement lien corona*/
 .lien_corona {
-	position: absolute;
-	top: 53%;
-	left: 43%;
+	
+	margin-left: 5px;
+	margin-top: 20px
 }
 
+/*placement langue dispo*/
 .site_anglais {
-	position: absolute;
-	top: 60%;
-	left: 44%;
+	
+	margin-left: 0px;
+	margin-top: 0px
 }
 
 
-.relative { position: relative;}
-.absolu {position: absolute;}
-.fixe {position: fixed;}
-
-
-
-
-
-
-/*////////////////////////////////////////////////// menu bas /////////////////////////////////////*/
-
-.bas2 {
-	top:90%;
-}
-
-.bas {
-	bottom : 0px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
-  width : 99%;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #666;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  text-decoration: underline;
-}
-
+/* quand on passe la souris sur un lien il est surligné*/
 p a{
 	text-decoration: none;
 }
@@ -190,8 +238,62 @@ p a:hover{
 	text-decoration: underline;
 }
 
-.active {
-  color: white;
-  background-color: #4CAF50;
+
+
+
+/*////////////////////////////////////////////////// menu bas /////////////////////////////////////*/
+
+/*definition de la position absolu*/
+.absolu {position: absolute;}
+
+/*placement menu 2*/
+.bas2 {
+	bottom:47px;
+}
+
+/*placement menu 1*/
+.bas {
+	bottom : 0px;
+}
+
+/*definition du style du menu bas*/
+ul {
+	
+	list-style-type: none;
+	
+	margin: 0;
+	padding: 0;
+	
+	overflow: hidden;
+	
+	border: 1px solid #e7e7e7;
+	background-color: #f3f3f3;
+	width : 99%;
+}
+
+/* definition des parametre graphique du menu*/
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: #666;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li p {
+	display: block;
+	color: #666;
+	text-align: center;
+	padding: 0px 16px;
+	text-decoration: none;
+}
+
+/*surligner les lien quand on passe la souris dessus*/
+li a:hover {
+	text-decoration: underline;
 }
 

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 
-<head>
+<head>     <!--  definition de l'onglet et des autres fichier utilisé -->
 	<title>Google</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="google.css"  />
@@ -12,52 +12,55 @@
 
 <body bgcolor=white>
 	
+	<!-- menu du haut -->
 	<a href="https://accounts.google.com/"><img class="connexion_image" src="connexion_google.png"></a>
 	<a href="https://www.google.fr/intl/fr/about/products?tab=wh"><img class="menu_haut_image" src="carre_google.png"></a>
 	<a href="https://www.google.fr/imghp?hl=fr&tab=wi&authuser=0&ogbl" class="texte_menu_haut image">Images</a>
 	<a href="https://www.gmail.com" class="texte_menu_haut gmail">Gmail</a>	
 
 	
-	<a href="https://www.google.com/search?sxsrf=ALeKk00x8veGTzk_Xy6QAJVINr8PC-mPyw:1585923398938&q=coronavirus+conseils&oi=ddle&ct=153021071&hl=fr&sa=X&ved=0ahUKEwiCw9SGuczoAhUMcBQKHbJjBtwQPQgM"><img class="google_image" src="https://www.google.com/logos/doodles/2020/stay-home-save-lives-6753651837108752-law.gif"></a>
-	<img class="google_image_partage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAoklEQVR42mMwTvvPQAZ2AOKZQPwAimdCxeBqyDX0DBD/R8NnkA0nx+CZWAyF4ZmUGPwAj8EPBp3BzkB8mdSgwBfTMkC8EsmAW8RGHq6YPgu14DOUD6IrgNiF2OSGL6ZheDUQyxEbbMREyCcgdiU1kkmKaXIMxhcUlylxMa7Iu0VpGONKbqDYL6ckVRDCZKdjmua84VkI0bQ8plkNQrM6jygMAODsqWK79M8/AAAAAElFTkSuQmCC">
-											
+	<!-- image google et recherche -->
+	<div id="contaigner_google">
 	
-	
-
-	<FORM method=GET action="http://www.google.fr/search" class="recherche">
-		<TABLE bgcolor="#FFFFFF" width="597">
-					<div align="center" class="recherche">
+		<a href="https://www.google.com/search?sxsrf=ALeKk00x8veGTzk_Xy6QAJVINr8PC-mPyw:1585923398938&q=coronavirus+conseils&oi=ddle&ct=153021071&hl=fr&sa=X&ved=0ahUKEwiCw9SGuczoAhUMcBQKHbJjBtwQPQgM"><img class="google_image" src="https://www.google.com/logos/doodles/2020/stay-home-save-lives-6753651837108752-law.gif"></a>
+		<img class="google_image_partage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAoklEQVR42mMwTvvPQAZ2AOKZQPwAimdCxeBqyDX0DBD/R8NnkA0nx+CZWAyF4ZmUGPwAj8EPBp3BzkB8mdSgwBfTMkC8EsmAW8RGHq6YPgu14DOUD6IrgNiF2OSGL6ZheDUQyxEbbMREyCcgdiU1kkmKaXIMxhcUlylxMa7Iu0VpGONKbqDYL6ckVRDCZKdjmua84VkI0bQ8plkNQrM6jygMAODsqWK79M8/AAAAAElFTkSuQmCC">
+		
+		<!-- outil recherche google -->
+		<div id="contaigner_recherche_google">
+			<FORM method=GET action="http://www.google.fr/search" class="recherche">
+				<TABLE bgcolor="#FFFFFF" width="597">
+					<div>
 						<input TYPE=text name=q size=31 maxlength=255 value="" class="texte_recherche" >
 						<input TYPE=hidden name=hl value=fr>
 						<input type=submit name=btnG VALUE="Recherche Google" class="bp_recherche">
 					</div>
-		</TABLE>
-	</FORM>
+				</TABLE>
+			</FORM>
+			
+			<!-- bouton chance -->
+			<form action="https://www.google.com/doodles/">
+				<button type="submit" class="bp_chance">J'ai de la chance</button>
+			</form>
+		</div>
+	</div>
 	
+	<!-- info sur le coronavirus et site anglais -->
+	<div id="contaigner_corona">
 	
+		<img class="geste_barriere_image" src="https://www.gstatic.com/images/hpp/dothefive_90x90t.gif">
+		
+		<p> <a class="lien_corona" href="https://www.google.com/url?q=https://www.google.fr/search%3Fq%3Dcoronavirus%2Bconseils%26fbx%3Ddothefive%26hl%3Dfr&source=hpp&id=19016789&ct=3&usg=AFQjCNHheQesZVgg5oX7EaQEr-dw_aeXQg&sa=X&ved=0ahUKEwj1msXx4MzoAhVoDWMBHTmEAAEQ8IcBCA8">5 GESTES "BARRIERE" pour freiner le coronavirus </a></p>
+		<p class="site_anglais"> Google disponible en : <a href="https://www.google.com/setprefs?sig=0_84E85k6c_IEED4hBJFEzcTL81co%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwj1j_HR5MzoAhULnhQKHaeZDhQQ2ZgBCBE">English</a></p>
 	
+	</div>
 	
-	<form action="https://www.google.com/doodles/">
-         <button type="submit" class="bp_chance">J'ai de la chance</button>
-    </form>
 
-	
-	
-	
-	
-	<img class="geste_barriere_image" src="https://www.gstatic.com/images/hpp/dothefive_90x90t.gif">
-
-	<p> <a class="lien_corona" href="https://www.google.com/url?q=https://www.google.fr/search%3Fq%3Dcoronavirus%2Bconseils%26fbx%3Ddothefive%26hl%3Dfr&source=hpp&id=19016789&ct=3&usg=AFQjCNHheQesZVgg5oX7EaQEr-dw_aeXQg&sa=X&ved=0ahUKEwj1msXx4MzoAhVoDWMBHTmEAAEQ8IcBCA8">5 GESTES "BARRIERE" pour freiner le coronavirus </a></p>
-	
-	<p class="site_anglais"> Google disponible en : <a href="https://www.google.com/setprefs?sig=0_84E85k6c_IEED4hBJFEzcTL81co%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwj1j_HR5MzoAhULnhQKHaeZDhQQ2ZgBCBE">English</a></p>
-	
-	
+	<!-- menu du bas -->
 	<ul class="absolu bas2">
-		<li><a>France</a></li>		
+		<li><p>France</p></li>		
 	</ul>
 	
 	<ul class= "absolu bas">
-		
 		<li><a href="https://www.google.com/intl/fr_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicité</a></li>
 		<li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Entreprise</a></li>
 		<li><a href="https://about.google/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">A propos</a></li>
@@ -66,8 +69,7 @@
 		<li style="float:right"><a href="https://www.google.com/preferences?hl=fr">Paramètres</a></li>
 		<li style="float:right"><a href="https://policies.google.com/terms?fg=1">Conditions</a></li>
 		<li style="float:right"><a href="https://policies.google.com/privacy?fg=1">Confidentialité</a></li>
-		<li style="float:right"><a href="https://support.google.com/websearch?p=fr_consumer_info&hl=fr&fg=1">Info consommateurs</a></li>
-			
+		<li style="float:right"><a href="https://support.google.com/websearch?p=fr_consumer_info&hl=fr&fg=1">Info consommateurs</a></li>	
 	</ul>
 	
 </body>
