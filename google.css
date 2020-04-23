@@ -157,11 +157,11 @@ header {
 	top: 60px;
 	left: 120px;
 	
-	
-	flex-wrap: nowrap;
+
 	border: 0px solid #f3f3f3;
 	background-color: #f3f3f3;
 	border-radius: 4px;
+	color: #666;
 }
 
 .bp_chance {
@@ -179,6 +179,7 @@ header {
 	border: 0px solid #f3f3f3;
 	background-color: #f3f3f3;
 	border-radius: 4px;
+	color: #666;
 }
 
 /*/////////////////////////////////////////////////////////geste barriere/////////////////////////////////////////////////*/
@@ -249,11 +250,13 @@ p a:hover{
 /*placement menu 2*/
 .bas2 {
 	bottom:47px;
+	left : 0px;
 }
 
 /*placement menu 1*/
 .bas {
 	bottom : 0px;
+	left : 0px;
 }
 
 /*definition du style du menu bas*/
@@ -268,7 +271,7 @@ ul {
 	
 	border: 1px solid #e7e7e7;
 	background-color: #f3f3f3;
-	width : 99%;
+	width : 99.8%;
 }
 
 /* definition des parametre graphique du menu*/
